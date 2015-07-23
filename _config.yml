@@ -1,0 +1,25 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               The Gymnasium Blog
+tagline:             blog
+description:         'News and updates from the <a href="http://thegymnasium.com">Gymnasium</a>'
+url:                 http://thegymnasium.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Andrew Miller
+  url:               https://twitter.com/andrewpmiller
+    
+    # can we put more urls in here?
+  
+  email:             amiller@aquent.com
+
+# Custom vars
+version:             1.0.0
