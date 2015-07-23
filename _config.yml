@@ -12,14 +12,12 @@ url:                 http://thegymnasium.com
 baseurl:             ''
 paginate:            5
 
-# About/contact
-author:
+# Author Info
+andrew:
   name:              Andrew Miller
   url:               https://twitter.com/andrewpmiller
-    
-    # can we put more urls in here?
-  
   email:             amiller@aquent.com
+
 
 # Custom vars
 version:             1.0.0
