@@ -2,27 +2,17 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-
-<!-- Author Attribution -->
-{% assign author = site.authors[page.author] %}
-
-<!-- Output author details if some exist. -->
-{% if author %}
-<div class="post">
-  <div class="meta">
-    <!-- <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40"> -->
-    <span class="author">By <a href="{{ author.web }}" target="_blank">{{ author.display_name }}</a></span>
-  </div>
-</div>
-{% endif %}
-<!-- End Author Attribution -->
-
-  {{ content }}
-
-
+<div class="post">  
+    
+    <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% assign author = site.authors[page.author] %}
+    {% if author %} 
+      <div class="byline">by <a href="{{ author.web }}">{{ author.display_name }}</a></div>
+    {% endif %}
+    
+    
+      {{ content }}
 </div>
 
 
