@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               The Gymnasium Blog
-tagline:             
+tagline:             News and Updates
 description:         'News and updates from the <a href="http://thegymnasium.com">Gymnasium</a>'
 url:                 http://thegymnasium.com
 baseurl:             ''
