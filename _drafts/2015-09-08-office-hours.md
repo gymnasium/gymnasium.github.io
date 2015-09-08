@@ -1,9 +1,11 @@
 ---
 layout: post
-title: A Peek Behind the Scenes
+title: Back to School with Office Hours!
 author: andrew
 ---
-The idea of _office hours_ [^1] has come up in conversation a few times in the past, but somehow we'd always ended up tangled in the logistics. However, when [Mike Bifulco](https://twitter.com/mbifulco) (our Director of Technology) suggested broadcasting a live stream of his development work, things started to come together.
+It's September! And, if you're keeping score at home, you'd be right to point out that we're running behind schedule. 
+
+The idea of holding _office hours_ [^1] has come up in conversation a few times in the past, but somehow we'd always ended up tangled in the logistics. However, when [Mike Bifulco](https://twitter.com/mbifulco) (our Director of Technology) suggested broadcasting a live stream of his development work, things started to come together.
 
 ## Watching Other People Write Code is Actually a _Thing_
 
