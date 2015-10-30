@@ -6,7 +6,7 @@ author: andrew
 
 Yes so this is the big news. It's actually huge news. 
 
-And, now it's official: __We are launching a new Gymnasium in ~~August~~!!!__
+And, now it's official: __We are launching a new Gymnasium in August!!!__
 
 There are a few things that you need to know:
 
