@@ -1,0 +1,422 @@
+html {
+  font: 100% sans-serif;
+  }
+
+body {
+  color: #222;
+  background: #ebebeb;
+  margin: 0;
+  }
+
+html,
+body {
+  height: 100%;
+  }
+
+/* HTML5 elements / redefine display */
+
+article,
+aside,
+main {
+  display: block;
+  }
+
+/* links / general */
+
+a {
+  color: #f8971d;
+  text-decoration: none;
+  }
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  }
+
+/* flexible images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  }
+
+/* flexible structure / centering mechanism */
+
+.structure {
+  width: 92%;
+  max-width: 72em;
+  margin: 0 auto;
+  }
+
+/* no wrap text / phrase groups */
+
+.nowrap {
+  font: inherit;
+  color: inherit;
+  white-space: nowrap;
+  }
+
+/* brand / Gymnasium logo */
+
+#brand {
+  background: #222;
+  }
+
+.logo {
+  padding: 2.2em;
+  }
+
+.logo img {
+  max-width: 13.125em;
+  }
+
+/* main / article */
+
+main {
+  display: block;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+  }
+
+main article {
+  padding: 2.2em;
+  box-sizing: border-box;
+  }
+
+@media (min-width: 60em) {
+
+main article {
+  float: left;
+  width: 75%;
+  }
+
+}
+
+/* typographic style / basic */
+
+main h1,
+main h2,
+main h3 {
+  letter-spacing: .04em;
+  }
+
+.main-header {
+  font-family: brandon-grotesque, "Helvetica Neue", "Helvetica", sans-serif;
+  margin-top: -.2em;
+  margin-bottom: 1.8em;
+  }
+
+.main-header h1,
+.main-header h2 {
+  font-weight: 900;
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+/* offset "live event" style */
+
+.event-header {
+  margin-top: -.21em;
+  margin-left: -.3em;
+  margin-bottom: 1.3em;
+  }
+
+@media (min-width: 39em) {
+
+.event-header {
+  margin-bottom: 2em;
+  }
+
+}
+
+.event-header h1,
+.event-header h2 {
+  display: inline-block;
+  }
+
+/* "live event" style */
+
+.event-header h1 {
+  background: #f8971d;
+  padding: .21em .2em .1em .3em;
+  margin-right: .2em;
+  }
+
+.event-header h2 {
+  padding-top: .21em;
+  padding-bottom: .1em;
+  }
+
+main p {
+  font: normal 1em/1.5 "Helvetica Neue", "Helvetica", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+
+main p.call-out {
+  font: normal 1.4em/1.5 brandon-grotesque, "Helvetica Neue", "Helvetica", sans-serif;
+  }
+
+@media (min-width: 36em) {
+
+  main p.call-out {
+    font-size: 1.6em;
+    line-height: 1.4;
+    }
+
+}
+
+main p.small-print {
+  line-height: 1.2;
+  }
+
+/* event banner hero / title, speaker(s), datetime */
+
+.event-banner-hero {
+  font-family: brandon-grotesque, "Helvetica Neue", "Helvetica", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #d73158;
+  padding: 2em 2.2em;
+  margin: 0 -2.2em;
+  }
+
+.event-banner-hero h1 {
+  font-weight: 900;
+  font-size: 2.2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: .4em;
+  }
+
+.event-banner-hero h2 {
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: .8em;
+  }
+
+.event-banner-hero h3 {
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+/* form / registration */
+
+.registration-closed {
+  background: #ebebeb;
+  padding: 1.6em 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 2em;
+  }
+
+.registration-closed h2 {
+  font-family: brandon-grotesque, "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 2.2em;
+  line-height: 1.1;
+  letter-spacing: .01em;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+.registration-closed p {
+  margin-bottom: 0;
+  }
+
+.event-form {
+  color: #222;
+  margin: 2em 0;
+  }
+
+.event-form fieldset {
+  border: 0;
+  padding: 0;
+  }
+
+.event-form fieldset legend {
+  font: 900 1.6em/1.2 brandon-grotesque, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border: 0;
+  }
+
+.event-form fieldset ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  }
+
+.event-form fieldset li {
+  font-size: 1em;
+  margin: 1.4em 0 0;
+  }
+
+.event-form label {
+  display: block;
+  font: normal 1em/1.3 brandon-grotesque, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  }
+
+.event-form fieldset input,
+.event-form .optional {
+  display: block;
+  width: 100%;
+  font: normal 1em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: none;
+  padding: .5em;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #f8971d;
+  border-radius: 2px;
+  box-sizing: border-box;
+  }
+
+.event-form label.error {
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: .5em;
+  margin-bottom: -.5em;
+  }
+
+.event-form .optional {
+  line-height: 1.4;
+  margin-bottom: 1.6em;
+  }
+
+.event-form p.small-print {
+  line-height: 1.2;
+  margin-bottom: 1.2em;
+  }
+
+.event-form p.small-print small {
+  line-height: 1.2;
+  }
+
+.event-form button {
+  margin-top: 2em;
+  }
+
+.gym-button {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: #f8971d;
+  padding: 2em;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  }
+
+.gym-button:hover,
+.gym-button:focus {
+  background: #666;
+  }
+
+.gym-button b {
+  font: bold 2em/1 brandon-grotesque, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: .02em;
+  vertical-align: baseline;
+  }
+
+@media (min-width: 32em) {
+
+.gym-button {
+  max-width: 30em;
+  }
+
+}
+
+/* thanks */
+
+.thanks {
+  min-height: 85%;
+  }
+
+.thanks .registration-closed {
+  margin: 5%;
+  }
+
+/* sidebar */
+
+main aside {
+  padding: 0 2.2em 1.6em;
+  box-sizing: border-box;
+  }
+
+main aside header {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #ccc;
+  margin-top: -.2em;
+  margin-bottom: 1.6em;
+  }
+
+@media (min-width: 60em) {
+
+main aside {
+  float: right;
+  width: 25%;
+  padding: 1.6em;
+  border-left: 1px dashed #ccc;
+  margin-left: -1px;
+  }
+
+main aside header {
+  padding-top: 1.2em;
+  }
+
+}
+
+main aside h1 {
+  font: 900 1.6em/1.1 brandon-grotesque, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+main aside h2 {
+  font: bold 1.2em/1.2 brandon-grotesque, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+.event-bio {
+  margin-bottom: 2em;
+  }
+
+.event-bio ~ header {
+  margin-top: 2.2em;
+  }
+
+.event-bio img {
+  max-width: 8em;
+  border: 1px solid #ebebeb;
+  }
+
+.event-bio h2 {
+  margin-top: 1.3em;
+  margin-bottom: .8em;
+  }
+
+/* footer */
+
+#contentinfo {
+  background: #222;
+  }
+
+.copyright {
+  color: #ccc;
+  padding: 1.2em 2.2em;
+  }

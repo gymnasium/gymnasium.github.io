@@ -1,49 +1,17 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: false
 
 # Setup
-title:               The Gymnasium Blog
-tagline:             News and Updates
-description:         'News and updates from the <a href="http://thegymnasium.com">Gymnasium</a>'
-url:                 http://thegymnasium.com
-baseurl:             ''
-paginate:            5
+title:               Aquent Gymnasium
+#url:                 http://gymnasium.github.io
+baseurl:
+#permalink: :year/:month/:day/:title/
+#paginate:            5
 
 # Custom vars
-gems: [jekyll-paginate]
+# Conversion
+markdown:    kramdown
+highlighter: rouge
 
-version:             1.0.0
-
-authors:
-  andrew:
-    display_name: Andrew Miller
-    # gravatar: b31e02822eba05113cee068b28e7589b
-    email: amiller@aquent.com
-    web: http://www.miller-co.com/
-    twitter: andrewpmiller
-    github: andrewpmiller
-  mike:
-    display_name: Mike Bifulco
-    # gravatar:
-    email: mbifulco@aquent.com
-    web: http://www.thegymnasium.com/
-    twitter: mbifulco
-    github: mbifulco
-  jeremy:
-    display_name: Jeremy Osborn
-    # gravatar:
-    email: josborn@aquent.com
-    web: http://www.thegymnasium.com/
-    twitter: jeremias
-    github: jeremyosborn
-  michael:
-    display_name: Michael Bingham-Hawk
-    # gravatar:
-    email: mbingham-hawk@aquent.com
-    web: http://www.thegymnasium.com/
-    twitter: 
-    github: mbinghamhawk
-    
+#gems: [jekyll-paginate]
+repository: gymnasium/gymnasium.github.io
+github:
+  url: http://localhost:4000
