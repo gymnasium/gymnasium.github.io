@@ -1,0 +1,17 @@
+---
+layout: default
+title: The Gymnasium - Current Issues
+---
+
+
+<header class="main-header">
+  <h1>Current Issues</h1>
+</header>
+
+{% for post in site.categories.issues %}
+    <small>{{ post.date | date: "%m/%d/%Y"  }}</small>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    <!-- <p><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Read More...</a></p> -->
+    <hr>
+{% endfor %}
