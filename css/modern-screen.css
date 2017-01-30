@@ -122,7 +122,7 @@ main h3 {
 
 /* System Status style */
 
-.status ul{
+.status {
   list-style: none;
   margin-top: 1em;
 }
@@ -130,25 +130,28 @@ main h3 {
 .status li {
   font-weight: bold;
   /*font-size: 1.2em;*/
-  margin-top: 1em;
+  margin-top: 1.5em;
+}
+
+.status li:first-child {
+  margin-top: 0;
 }
 
 .status li.ok:before {
   display: list-item;
   float: left;
   position: relative;
-  top: -1em; /* tweak */
+  top: -.5em; /* tweak */
   content: "";
   list-style-image: url("/img/checkmark-flat.png");
   margin-right: -3em; /* tweak */
 }
 
-.status li.issue {
-
+.status li.issue:before {
   display: list-item;
   float: left;
   position: relative;
-  top: -1em; /* tweak */
+  top: -.5em; /* tweak */
   content: "";
   list-style-image: url("/img/bone-flat.png");
   margin-right: -3em; /* tweak */
