@@ -8,4 +8,4 @@
 - [Enroll in our courses](https://thegymnasium.com/courses/)
 - [Read our blog](https://medium.com/gymnasium)
 - [Watch our LiveCoding streams](https://www.liveedu.tv/mbifulco/)
-- [Find work!](aquent.com/find-work/?utm_source=thegymnasium&utm_medium=github&utm_campaign=readmejobs)
+- [Find work!](https://aquent.com/find-work/?utm_source=thegymnasium&utm_medium=github&utm_campaign=readmejobs)
