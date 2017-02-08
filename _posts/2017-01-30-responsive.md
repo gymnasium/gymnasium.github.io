@@ -1,8 +1,10 @@
 ---
-layout: issue
+layout: issue-detail
 title: Rendering issues on mobile devices
 category: issues
-date:   2017-02-07
+priority: low
+status: open
+date:   2017-02-08
 ---
 
-The glitchy mobile experience that crept in with our recent update has been addressed! We're testing today, and all the responsive goodness that you'd expect from the people who _teach_ responsive design will be reflected on our live site shortly. Thanks for not razzing us. 
+The glitchy mobile experience that crept in with our recent update has been addressed! We're still testing our fixes, and should have our live site looking and working the way we wanted it to in the first place.

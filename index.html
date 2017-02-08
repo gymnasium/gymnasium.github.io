@@ -3,24 +3,18 @@ layout: default
 title: The Gymnasium
 ---
 
+{% assign open_issues = false %}
 
-<header class="main-header">
-  <h1>Current Issues</h1>
-</header>
+{% for post in site.posts %}
 
-{% for post in site.categories.issues %}
-    <h2>{{ post.title }}</h2>
-    <small> Updated: {{ post.date | date: "%m/%d/%Y"  }}</small>
+  {% if post.status == "open" %}
+    {% assign open_issues = true %}
+  {% endif %}
 
-    {% assign exWordCount = post.excerpt | number_of_words %}
-
-    <p>{{ post.excerpt }}</p>
-
-    {% assign wordCount = post.content | number_of_words %}
-
-      {% if wordCount > exWordCount %}
-        <p><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Read More...</a></p>
-      {% endif %}
-
-    <hr>
 {% endfor %}
+
+{% if open_issues %}
+  {% include issues_list.html %}
+{% else %}
+  {% include status_display.html %}
+{% endif %}

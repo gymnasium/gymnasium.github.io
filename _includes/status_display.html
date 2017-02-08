@@ -1,0 +1,36 @@
+<header class="main-header">
+  <h1>System Status</h1>
+</header>
+
+<ul class="status">
+  <li class="ok">Site Availability</li>
+  <li class="ok">Registration</li>
+  <li class="ok">Enrollment</li>
+  <li class="ok">Video</li>
+  <li class="ok">Forums</li>
+  <li class="ok">Certification</li>
+</ul>
+
+{% assign open_issues = false %}
+{% assign open_issue_count = '0' %}
+{% for post in site.categories.issues %}
+  {% if post.status == "open" %}
+    {% assign open_issues = true %}
+    {% capture open_issue_count %}{{ open_issue_count | plus: '1' }}{% endcapture %}
+  {% endif %}
+
+{% endfor %}
+
+{% if open_issues %}
+  <br>
+  <hr>
+  {% if open_issue_count == '1' %}
+    <b><small><a href="{{base.url}}/issues.html">View</a> {{ open_issue_count }} open issue</small></b>
+      {% else if  open_issue_count > '1' %}
+    <b><small><a href="{{base.url}}/issues.html">View</a> {{ open_issue_count }} open issues</small></b>
+    {% endif %}
+{% else %}
+  <br>
+  <hr>
+  <small>There are no open issues.</small>
+{% endif %}

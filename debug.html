@@ -1,0 +1,48 @@
+---
+layout: default
+title: DEBUG - The Gymnasium
+---
+
+{% assign open_issues = false %}
+{% assign closed_issues = false %}
+
+{% for post in site.categories.issues %}
+  {% if post.status == "open" %}
+    {% assign open_issues = true %}
+  {% else if post.status == "closed" %}
+    {% assign closed_issues = true %}
+  {% endif %}
+{% endfor %}
+
+{% if open_issues %}
+  <h2>OPEN ISSUES</h2>
+  <ol>
+    {% for post in site.categories.issues %}
+      {% if post.status == "open" %}
+        <b><li>{{ post.title }}</li></b>
+        <ul>
+          <li><small>Priority: <b>{{ post.priority | upcase }}</b></small></li>
+          <li><small>Updated: {{ post.date | date: "%m/%d/%Y"  }}</small></li>
+          <li><small>Path: {{ post.path }}</small></li>
+          <li><small>Word Count: {{ post.content | number_of_words }}</small></li>
+          <li><b><small><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">VIEW</a></small></b></li>
+        </ul>
+  {% endif %}
+{% endfor %}
+</ol>
+{% endif %}
+
+<hr>
+
+{% if closed_issues %}
+  <h2>CLOSED ISSUES</h2>
+  <ol>
+  {% for post in site.categories.issues %}
+
+    {% if post.status == "closed" %}
+    <li><b><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">VIEW</a></b> {{ post.title }}</li>
+    {% endif %}
+
+    {% endfor %}
+  </ol>
+{% endif %}

@@ -1,8 +1,9 @@
 ---
-layout: issue
+layout: issue-detail
 title: Certificates not issued automatically
 category: issues
 priority: high
+status: closed
 date:   2017-02-07
 ---
 
