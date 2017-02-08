@@ -11,6 +11,12 @@ baseurl:
 markdown:    kramdown
 highlighter: rouge
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+
+
 #gems: [jekyll-paginate]
 repository: gymnasium/gymnasium.github.io
 github:
