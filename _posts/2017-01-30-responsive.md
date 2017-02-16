@@ -3,7 +3,7 @@ layout: issue-detail
 title: Rendering issues on mobile devices
 category: issues
 priority: low
-status: open
+status: closed
 date:   2017-02-08
 ---
 
