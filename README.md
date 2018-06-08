@@ -7,5 +7,5 @@
 
 - [Enroll in our courses](https://thegymnasium.com/courses/)
 - [Read our blog](https://medium.com/gymnasium)
-- [Watch our LiveCoding streams](https://www.liveedu.tv/mbifulco/)
+- [Watch our LiveCoding streams](https://www.youtube.com/watch?v=YOG8_QKrhRs&list=PL0Y6L6nQtNzfvDq2rzNJ0YbjvHebRyEom)
 - [Find work!](https://aquent.com/find-work/?utm_source=thegymnasium&utm_medium=github&utm_campaign=readmejobs)
